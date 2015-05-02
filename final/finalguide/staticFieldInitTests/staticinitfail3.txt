@@ -1,0 +1,28 @@
+
+/* miniJava test program
+ *Fail 3
+ *Static Field Initialization 
+ */
+class A{
+	static int x = foo();
+
+	public static void main(String[] args){
+		A a = new A();
+		System.out.println(A.x);
+    }
+	
+	public int foo() {
+		return 2;
+	}
+}
+
+class B {
+	static int x = 10;
+	static A a = new A();
+	
+}
+
+class C{	
+	
+}
+

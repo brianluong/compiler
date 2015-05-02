@@ -1,0 +1,32 @@
+
+/* miniJava test program
+ *Pass3
+ *Constructor
+ */
+class A{
+	static int a = 20;
+	public static void main(String[] args){
+		C c = new C();
+		c.x = 10;
+		B b = new B(c);
+		System.out.println(b.c.x);
+    }
+}
+
+class B {
+	int x;
+	C c;
+	public B(int x) {
+		this.x = x;
+	}
+	
+	public B(C c) {
+		this.c = c;
+	}
+	
+}
+
+
+class C{	
+	int x;
+}

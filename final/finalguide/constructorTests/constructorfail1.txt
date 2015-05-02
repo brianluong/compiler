@@ -1,0 +1,25 @@
+
+/* miniJava test program
+ *Fail1
+ *Constructor
+ */
+class A{
+	static int a = 20;
+	public static void main(String[] args){
+		B b = new B(A.a + 20, 30);
+		System.out.println(b.x);
+    }
+}
+
+class B {
+	int x;
+	C c;
+	public B(int x) {
+		this.x = x;
+	}
+	
+}
+
+class C{	
+	
+}

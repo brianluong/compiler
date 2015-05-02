@@ -1,0 +1,26 @@
+
+/* miniJava test program
+ *Pass 6
+ *Static Field Initialization 
+ */
+class A{
+	static int x = B.y;
+
+	public static void main(String[] args){
+		int y = B.z;
+		System.out.println(y);
+    }
+}
+
+class B {
+	static int x = 10;
+	static int y = x + A.x;
+	static A a = new A();
+	static int z = A.x + x ;
+	
+}
+
+class C{	
+	
+}
+
